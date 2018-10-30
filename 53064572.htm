@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+  <style>
+  #div-b {
+display: none;
+}
+  </style>
+</head>
+<body>
+<!-- SECTION 1 -->
+ <!--WELLCOME PAGE SECTION-->
+ <div id="div-a" class=" mt-2 px-0 pt-05 container-fluid">
+
+ <div class="row">
+
+  <div class="hex-container mx-0 px-0 col-sm-12 col-md-12 col-lg-12 col-      xl-12">
+    <img class="hex-banner img-fluid" src="https://www.gstatic.com/webp/gallery3/2.png" alt="">
+  </div>
+
+</div>
+
+</div>
+
+<!--REPLACEMENT AFTER 5 SECONDS -- START-->
+
+ <div id="div-b" class=" mt-2 px-0 pt-05 container-fluid">
+
+  <div class="row">
+
+    <div class="hex-container mx-0 px-0 col-sm-12 col-md-12 col-lg-12  col-xl-12">
+      <h1>SIGN UP NOW </h1>
+    </div>
+
+  </div>
+
+</div>
+<script>
+
+/*setTimeout(
+  function() {
+    $('#div-a').replaceWith($('#div-b'));
+    $('#div-b').show();
+  },
+  4000
+);*/
+
+   setTimeout(function(){
+$("#div-a").fadeOut("slow", function () {
+$('#div-a').replaceWith($('#div-b'));
+$('#div-b').show();
+});
+}, 2000);
+</script>
+</body>
+
+</html>
